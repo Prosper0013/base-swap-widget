@@ -8,12 +8,7 @@ const nextConfig = {
     'wagmi'
   ],
   experimental: {
-    esmExternals: 'loose',
-    serverComponentsExternalPackages: [
-      '@uniswap/universal-router-sdk',
-      'viem',
-      'wagmi'
-    ]
+    esmExternals: 'loose'
   },
   webpack: (config) => {
     config.resolve.fallback = {
@@ -23,8 +18,7 @@ const nextConfig = {
       crypto: require.resolve('crypto-browserify'),
       stream: require.resolve('stream-browserify'),
       http: require.resolve('stream-http'),
-      https: require.resolve('https-browserify'),
-      os: require.resolve('os-browserify/browser')
+      https: require.resolve('https-browserify')
     };
     return config;
   }
