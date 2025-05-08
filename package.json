@@ -16,8 +16,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "2.4.1",
-    "viem": "2.9.15",
-    "wagmi": "2.0.12"
+    "viem": "1.19.4",
+    "wagmi": "1.4.0"
   },
   "devDependencies": {
     "tailwindcss": "3.3.5",
