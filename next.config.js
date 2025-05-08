@@ -3,9 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: [
     '@uniswap/sdk-core',
-    '@uniswap/universal-router-sdk',
-    'viem',
-    'wagmi'
+    '@uniswap/universal-router-sdk'
   ],
   experimental: {
     esmExternals: 'loose'
