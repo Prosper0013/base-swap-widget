@@ -1,12 +1,12 @@
-{
+# Overwrite package.json
+echo '{
   "name": "base-swap-widget",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@uniswap/sdk-core": "3.0.1",
@@ -26,4 +26,8 @@
   "engines": {
     "node": "18.x"
   }
-}
+}' > package.json
+
+# Clean install
+rm -rf node_modules package-lock.json
+npm install
